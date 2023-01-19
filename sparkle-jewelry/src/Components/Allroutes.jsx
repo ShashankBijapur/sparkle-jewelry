@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 import {Routes,Route} from "react-router-dom"
 import Banglesbraclets from '../Pages/Bangles&braclets'
@@ -12,9 +14,12 @@ import NewArrivals from '../Pages/NewArrivals'
 import Rings from '../Pages/Rings'
 import Signin from '../Pages/Signin'
 import Singleproduct from '../Pages/Singleproduct'
+import Header from './Header'
+
 const Allroutes = () => {
   return (
     <div>
+      <Header/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/NewArrivals' element={<NewArrivals/>}></Route>
@@ -23,9 +28,9 @@ const Allroutes = () => {
         <Route path='/Bangles' element={<Banglesbraclets/>}></Route>
         <Route path='/Necklace' element={<Necklace/>}></Route>
         <Route path='/Kids' element={<Kids/>}></Route>
-        <Route path='/Gift' element={<Gifts/>}></Route>
+        <Route path='/Gifts' element={<Gifts/>}></Route>
         <Route path='/Single/:id' element={<Singleproduct/>}></Route>
-        <Route path='/Singin' element={<Signin/>}></Route>
+        <Route path='/Signin' element={<Signin/>}></Route>
         <Route path='/Favorites' element={<Favorites/>}></Route>
         <Route path='/Cart' element={<Cart/>}></Route>
       </Routes>
