@@ -4,6 +4,9 @@ import "./Footer.css"
 const Footer = () => {
   return (
     <div className='footer' >
+
+     
+      
       <div style={{display:"flex"}}>
       <div><img src="https://cdn.caratlane.com/media/static/images/V4/2022/CL/10-OCT/Others/insta/image1.jpg" alt="" width={600}/></div>
       <div>
@@ -47,6 +50,7 @@ CaratLane provides the exquisite craftsmanship of beautiful jewellery designs su
       </div>
       </div>
      </div>
+
      <div style={{backgroundColor:"rgb(234, 222, 245)",padding:"20px 0px"}}>
       <div style={{display:"flex",justifyContent:"space-evenly",padding:"60px 0px"}}>
         <div>

@@ -16,9 +16,10 @@ const SimpleSlider = () => {
     slidesPerView={1}
     navigation
     pagination={{ clickable: true }}
-    onSwiper={(swiper) => console.log(swiper)}
-    onSlideChange={() => console.log('slide change')}
-  >
+
+    onSwiper={(swiper) => (swiper)}
+    onSlideChange={() => ('slide change')}
+
     <SwiperSlide> <img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/01-JAN/AppBanner/Blaze/01/Desktop_1920-x560_toplisting.jpg" alt="" /></SwiperSlide>
     <SwiperSlide><img src="https://banner.caratlane.com/live-images/ed19e9fc6ddd4de592b67776543499c1.jpg" alt="" /></SwiperSlide>
     <SwiperSlide><img src="https://cdn.caratlane.com/media/static/images/V4/2022/Shaya/12_Dec/19)12_2022/CL_x_Shaya_Banners/Desktop_Toplisting_1920x560.jpg" alt="" /></SwiperSlide>

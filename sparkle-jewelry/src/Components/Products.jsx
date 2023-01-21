@@ -25,7 +25,7 @@ const Products = () => {
 useEffect(()=>{
 fetchData();
 },[])
-console.log(data);
+
 
   return (
    
@@ -36,9 +36,7 @@ console.log(data);
     slidesPerView={4}
     navigation
     pagination={{ clickable: true }}
-    onSwiper={(swiper) => console.log(swiper)}
-    onSlideChange={() => console.log('slide change')}
-  >
+
 
 {data.map((item)=>(
     <SwiperSlide> 

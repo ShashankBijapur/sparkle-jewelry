@@ -15,12 +15,11 @@ import NewArrivals from '../Pages/NewArrivals'
 import Rings from '../Pages/Rings'
 import Signin from '../Pages/Signin'
 import Singleproduct from '../Pages/Singleproduct'
-import Header from './Header'
+import PrivateRoute from '../AuthContext/PrivateRoute'
 
 const Allroutes = () => {
   return (
     <div>
-      <Header/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/NewArrivals' element={<NewArrivals/>}></Route>
@@ -30,9 +29,16 @@ const Allroutes = () => {
         <Route path='/Necklace' element={<Necklace/>}></Route>
         <Route path='/Kids' element={<Kids/>}></Route>
         <Route path='/Gifts' element={<Gifts/>}></Route>
-        <Route path='/Single/:id' element={<Singleproduct/>}></Route>
+      
+        <Route path='/Single/:id' element={
+          <PrivateRoute>
+        <Singleproduct/>
+        </PrivateRoute> 
+        }/>
+        
         <Route path='/Signin' element={<Signin/>}></Route>
-        <Route path='/Login' element={<Login/>}></Route>
+
+        <Route path='/Login' element={<Login/>}
         <Route path='/Favorites' element={<Favorites/>}></Route>
         <Route path='/Cart' element={<Cart/>}></Route>
       </Routes>

@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "mobile": "mobile",
+      "email": "email",
+      "firstName": "firstName",
+      "lastName": "lastName",
+      "password": "password"
+    },
+    {
+      "mobile": "7483145332",
+      "email": "shashankcb7483@gmail.com",
+      "firstName": "SHASHANK",
+      "lastName": "BIJAPUR",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "mobile": "07483145332",
+      "email": "shashankcbijapur24@gmail.com",
+      "firstName": "SHASHANK",
+      "lastName": "BIJAPUR",
+      "password": "14568",
+      "id": 3
+    },
+    {
+      "mobile": "74245565654",
+      "email": "user/ayaz.noori@masaischool.com",
+      "firstName": "dafdgg",
+      "lastName": "gsdsddf",
+      "password": "54321",
+      "id": 4
+    }
+  ]
+}
