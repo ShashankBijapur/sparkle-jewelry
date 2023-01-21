@@ -1,5 +1,5 @@
 import React from 'react';
-import jewelry from "../Img/jewelry.jpeg"
+import jewelry from "../Img/jewelry.png"
 import { FormControl,Input, InputGroup, InputRightAddon} from "@chakra-ui/react"
 import "./Header.css"
 import { Link } from 'react-router-dom';
@@ -25,13 +25,13 @@ here</div>
      <div className='drop6' style={{width:"250px",border:"1px solid purple",backgroundColor:"white"}}>
       <h2>Your Account</h2>
       <h4>Access Account and manage your orders</h4>
-      <button style={{border:"1px solid",backgroundColor:" rgb(226, 43, 186)",borderRadius:"5px",color:"wheat"}}>Sign Up</button>
-      <button style={{border:"1px solid",borderColor:"rgb(226, 43, 186)",borderRadius:"5px"}}>Log In</button>
+     <Link to="/Signin"><button style={{border:"1px solid",backgroundColor:" rgb(226, 43, 186)", borderRadius:"5px",color:"wheat",fontSize:"20px",marginRight:"20px"}}>Sign Up</button></Link> 
+    <Link to="/Login"><button style={{border:"1px solid",borderColor:"rgb(226, 43, 186)",borderRadius:"5px",fontSize:"20px"}}>Log In</button></Link>  
      </div>
      </Link>
       </div>
       <div className='fav'>
-    <Link to="/Favorites"> <img src="https://assets.ajio.com/static/img/wishlistIcon.svg" alt='' width={50}/></Link> 
+    <Link to="/Favorites"> <img src="https://cdn-icons-png.flaticon.com/128/121/121729.png" alt='' width={30}/></Link> 
       </div>
       <div className='cart'>
       <Link to="/Cart"> <img src="https://th.bing.com/th/id/OIP._LYIwX4GF77rLIs9e2GOkwHaHa?w=163&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" width={50}/></Link> 

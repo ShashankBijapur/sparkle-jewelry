@@ -9,6 +9,7 @@ import Favorites from '../Pages/Favorites'
 import Gifts from '../Pages/Gifts'
 import Home from '../Pages/Home'
 import Kids from '../Pages/Kids'
+import Login from '../Pages/Login'
 import Necklace from '../Pages/Necklace'
 import NewArrivals from '../Pages/NewArrivals'
 import Rings from '../Pages/Rings'
@@ -31,6 +32,7 @@ const Allroutes = () => {
         <Route path='/Gifts' element={<Gifts/>}></Route>
         <Route path='/Single/:id' element={<Singleproduct/>}></Route>
         <Route path='/Signin' element={<Signin/>}></Route>
+        <Route path='/Login' element={<Login/>}></Route>
         <Route path='/Favorites' element={<Favorites/>}></Route>
         <Route path='/Cart' element={<Cart/>}></Route>
       </Routes>

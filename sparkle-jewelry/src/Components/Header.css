@@ -18,6 +18,9 @@
     margin-right: 70px;
   margin-top: 10px;
 }
+.fav{
+    margin-top: 20px;
+}
 
 #header{
     position: fixed;
@@ -43,6 +46,7 @@
 }
 .rings:hover .drop1{
     display: block;
+   
 }
 .earings:hover .drop2{
     display: block;

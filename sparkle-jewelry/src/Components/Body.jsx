@@ -1,12 +1,16 @@
 import React from 'react'
 
+
 import "./Body.css"
 import { Link } from 'react-router-dom';
 import SimpleSlider from './SimpleSlider';
+import Products from './Products';
+import Comments from './Comments';
+
+
+
 const Body = () => {
-  
-  
- 
+
   return (
     <div>
      
@@ -30,13 +34,20 @@ const Body = () => {
        <Link to="/Bangles"><img src="https://cdn.caratlane.com/media/static/images/V4/2022/CL/12-DEC/HP-Banner/6tile/01/Desktop_7.jpg" alt="" /></Link> 
        <Link to="NewArrivals"><img src="https://cdn.caratlane.com/media/static/images/V4/2022/CL/12-DEC/HP-Banner/6tile/01/Desktop_6.jpg" alt="" /></Link> 
       </div>
+      <div className='image'>
+       <div className='zoom'><img src="https://cdn.caratlane.com/media/static/images/V4/2022/CL/12-DEC/HP-Banner/Collection/02/Collection_Borla.jpg" alt=""/>
+       </div>
+       <div className='zoom'> <img src="https://cdn.caratlane.com/media/static/images/V4/2022/CL/12-DEC/HP-Banner/Collection/02/Collection_Mogra.jpg" alt="" /> </div>
+       <div className='zoom'><img src="https://cdn.caratlane.com/media/static/images/V4/2022/CL/12-DEC/HP-Banner/Collection/02/Collection_Harmony.jpg" alt="" /></div>
+      </div>
+      <div className='products'>
+       <Products/>
+      </div>
+      <div className='comments'>
+        <Comments/>
+      </div>
     </div>
   )
 }
 
 export default Body
-
-//  
-/* 
-
-// */
