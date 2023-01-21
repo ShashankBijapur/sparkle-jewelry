@@ -1,11 +1,17 @@
 import React from 'react'
 
+
 import "./Body.css"
 import { Link } from 'react-router-dom';
 import SimpleSlider from './SimpleSlider';
-import Comments from './Comments';
+
 import Products from './Products';
-const Body = () => { 
+import Comments from './Comments';
+
+
+
+const Body = () => {
+
   return (
     <div>
      
@@ -40,7 +46,7 @@ const Body = () => {
       </div>
       <div className='comments'>
         <Comments/>
-      </div>
+      </div
       <div style={{display:"flex"}}>
       <div><img src="https://cdn.caratlane.com/media/static/images/V4/2022/CL/10-OCT/Others/insta/image1.jpg" alt="" width={600}/></div>
       <div>
@@ -83,9 +89,11 @@ CaratLane provides the exquisite craftsmanship of beautiful jewellery designs su
       </div>
       </div>
      </div>
+
     </div>
   )
 }
 
 export default Body
+
 

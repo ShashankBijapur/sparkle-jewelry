@@ -26,6 +26,7 @@ useEffect(()=>{
 fetchData();
 },[])
 
+
   return (
    
     <div className='products'>
@@ -35,9 +36,7 @@ fetchData();
     slidesPerView={4}
     navigation
     pagination={{ clickable: true }}
-    onSwiper={(swiper) => (swiper)}
-    onSlideChange={() => ('slide change')}
-  >
+
 
 {data.map((item)=>(
     <SwiperSlide> 

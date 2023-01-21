@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import { Button,Box,FormControl,Input,Text } from '@chakra-ui/react'
@@ -86,7 +87,7 @@ fetchData();
          <Footer/>
       </div>
     </div>
-  )
-}
+
+
 
 export default Login

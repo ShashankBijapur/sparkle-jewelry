@@ -37,7 +37,8 @@ const Allroutes = () => {
         }/>
         
         <Route path='/Signin' element={<Signin/>}></Route>
-        <Route path='/Login' element={<Login/>}/>
+
+        <Route path='/Login' element={<Login/>}
         <Route path='/Favorites' element={<Favorites/>}></Route>
         <Route path='/Cart' element={<Cart/>}></Route>
       </Routes>
