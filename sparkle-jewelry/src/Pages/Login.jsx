@@ -14,7 +14,7 @@ const user={
 const Login = () => {
   const [userID, setUserID] = useState(user);
   const [data,setData]=useState([]);
-  const {setAuthState} = useContext(AuthContext);
+  const {authState,setAuthState} = useContext(AuthContext);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUserID({
@@ -27,12 +27,13 @@ const Login = () => {
    data.forEach((el)=>{
     if(userID.email===el.email && userID.password===el.password){
    alert("Login Successfull")
-   setAuthState(true)
-   window.location.href = "/";
+   setAuthState(true);
     }
   })
   }
- 
+ if(authState){
+  window.location.href = "/";
+ }
   const getData=async ()=>{
     const res = await fetch("https://63c6b45e4ebaa802854bc9c2.mockapi.io/users");
     return await res.json();

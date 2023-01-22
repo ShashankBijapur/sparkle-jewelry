@@ -1,9 +1,13 @@
-import React from 'react';
+
 import jewelry from "../Img/jewelry.png"
 import { FormControl,Input, InputGroup, InputRightAddon} from "@chakra-ui/react"
 import "./Header.css"
 import { Link } from 'react-router-dom';
+
 const Header = () => {
+  
+
+
   return (
     <div id="header">
       <div className='header'>Introducing Sparkle Jewelry PoP! Plan your purchase  
@@ -13,10 +17,10 @@ here</div>
     <Link to="/"><img src={jewelry} alt="name" /></Link> 
       </div>
       <div>
-        <FormControl paddingRight={250} marginTop={3}>
+        <FormControl paddingRight={250} marginTop={3} >
           <InputGroup>
-          <Input placeholder='Search' size="md" color="red" width={500}  borderColor="purple"/>
-          <InputRightAddon><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=''/></InputRightAddon>
+          <Input placeholder='Search' size="md" color="red" width={500}  borderColor="purple" typeof='text'/>
+          <InputRightAddon typeof='submit'><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=''/></InputRightAddon>
           </InputGroup> 
         </FormControl>
       </div>
