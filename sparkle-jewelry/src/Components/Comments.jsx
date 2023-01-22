@@ -10,7 +10,7 @@ import "./Comments.css"
 const Comments = () => {
   return (
     <div className='Slider-banner'>
-    <Swiper
+    <Swiper>
     modules={[Pagination, Scrollbar, A11y]}
     spaceBetween={50}
     slidesPerView={1}

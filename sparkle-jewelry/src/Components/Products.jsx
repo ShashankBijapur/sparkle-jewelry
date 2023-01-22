@@ -15,7 +15,7 @@ const getData=async ()=>{
 }
 const Products = () => {
   const [data,setData]=useState([]);
-
+  const [array,setArray]=useState([]);
   function fetchData() {
     getData()
         .then((data) => setData(data))
@@ -26,11 +26,20 @@ useEffect(()=>{
 fetchData();
 },[])
 
+useEffect(()=>{
+  localStorage.setItem("fav", JSON.stringify(array));
+},[array])
+
+function fav(item){
+  setArray([...array,item])
+}
+
+
 
   return (
    
     <div className='products'>
-    <Swiper
+    <Swiper>
     modules={[Navigation, Pagination, Scrollbar, A11y]}
     spaceBetween={50}
     slidesPerView={4}
@@ -43,7 +52,7 @@ fetchData();
         <div key={item.id} className="card">
         <img src={item.avatar} alt="" width={500}/>
         <h3>{item.name}</h3>
-        <button><img src="https://cdn-icons-png.flaticon.com/128/4249/4249819.png" alt="" width={30}/></button>
+        <button onClick={()=>fav(item)}><img src="https://cdn-icons-png.flaticon.com/128/4249/4249819.png" alt="" width={30}/></button>
       </div>
        
       </SwiperSlide>

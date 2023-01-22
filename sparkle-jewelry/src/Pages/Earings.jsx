@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
+import { Link } from 'react-router-dom'
 import { Radio, RadioGroup, Stack,Text } from '@chakra-ui/react'
 import { useState,useEffect } from 'react'
 const Earings = () => {
@@ -9,7 +10,7 @@ const Earings = () => {
     return await res.json();
   }
     const [data,setData]=useState([]);
-  
+    const [array,setArray]=useState([]);
     function fetchData() {
       getData()
           .then((data) => setData(data))
@@ -19,6 +20,13 @@ const Earings = () => {
   useEffect(()=>{
   fetchData();
   })
+  useEffect(()=>{
+    localStorage.setItem("fav", JSON.stringify(array));
+  },[array])
+
+  function fav(item){
+    setArray([...array,item])
+  }
   return (
     <div>
       <div>
@@ -64,9 +72,10 @@ const Earings = () => {
       {
         data.map((item)=>(
           <div key={item.id} className="card">
-          <img src={item.avatar} alt="" width={500}/>
+        <Link to={`/Earings/${item.id}`}> <img src={item.avatar} alt="" width={500}/></Link>
+          <h1>₹ {item.price}</h1>
           <h3>{item.name}</h3>
-          <button><img src="https://cdn-icons-png.flaticon.com/128/4249/4249819.png" alt="" width={30}/></button>
+          <button  onClick={()=>fav(item)}><img src="https://cdn-icons-png.flaticon.com/128/4249/4249819.png" alt="" width={30}/></button>
           </div>
         ))
       }
