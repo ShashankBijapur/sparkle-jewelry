@@ -10,14 +10,15 @@ import "./Comments.css"
 const Comments = () => {
   return (
     <div className='Slider-banner'>
-    <Swiper
+    <Swiper>
     modules={[Pagination, Scrollbar, A11y]}
     spaceBetween={50}
     slidesPerView={1}
     pagination={{ clickable: true }}
+
     onSwiper={(swiper) => (swiper)}
     onSlideChange={() => ('slide change')}
-  >
+   
     <SwiperSlide className='comments'><img src="https://cdn-icons-png.flaticon.com/128/1384/1384063.png" alt="" width={50}/>
         <h1>My 12th Purchase from Caratlane !! Thanks a lot, Ajay Chauhan at Ambience mall outlet for commendable experience and support. Highly recommended!</h1>
      <h2>-Shivali Puri via Instagram</h2></SwiperSlide>

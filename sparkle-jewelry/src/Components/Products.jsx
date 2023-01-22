@@ -33,18 +33,19 @@ useEffect(()=>{
 function fav(item){
   setArray([...array,item])
 }
+
+
+
   return (
    
     <div className='products'>
-    <Swiper
+    <Swiper>
     modules={[Navigation, Pagination, Scrollbar, A11y]}
     spaceBetween={50}
     slidesPerView={4}
     navigation
     pagination={{ clickable: true }}
-    onSwiper={(swiper) => (swiper)}
-    onSlideChange={() => ('slide change')}
-  >
+
 
 {data.map((item)=>(
     <SwiperSlide> 
